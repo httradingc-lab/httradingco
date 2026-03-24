@@ -3,14 +3,44 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HT Trading Company | Shimla Hardware Store</title>
+<title>H.T. Trading Company | Shimla Hardware Store</title>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HardwareStore",
+  "name": "HT Trading Company",
+  "image": "https://yourdomain.com/images/store.jpeg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Junga Rd., Mehli",
+    "addressLocality": "Shimla",
+    "addressRegion": "Himachal Pradesh",
+    "postalCode": "171013",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "31.069299979208264",
+    "longitude": "77.18376949535264"
+  },
+  "url": "https://yourdomain.com",
+  "telephone": "+91-9816047057",
+  "openingHours": "Mo-Su 09:00-19:00",
+  "sameAs": [
+    "https://www.instagram.com/ht_trading_company_shimla/",
+    "https://www.facebook.com/profile.php?id=61561429820728"
+  ]
+}
+</script>
+
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
+
+
 <style>
-
-
-
 
 /* RESET */
 *{
@@ -142,30 +172,6 @@ box-shadow:0 3px 8px rgba(0,0,0,0.2);
 }
 
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-body{
-font-family:Poppins, sans-serif;
-background:#dae3e6;
-color:#0c234e;
-line-height:1.6;
-}
-
-h1,h2,h3{
-color:#0c234e;
-}
-
-.container{
-width:90%;
-max-width:1200px;
-margin:auto;
-}
-
-
 
 
 
@@ -186,6 +192,10 @@ opacity:1;
 transform:translateY(0);
 }
 }
+
+
+
+
 
 /* HERO */
 
@@ -222,6 +232,22 @@ gap:15px;
 flex-wrap:wrap;
 }
 
+.hero-buttons .btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+
+  width:50px;
+  height:50px;
+  padding:0;
+  border-radius:10%;
+}
+
+.hero-buttons .icon{
+  width:24px;
+  height:24px;
+}
+
 .hero img{
 width:500px;
 max-width:100%;
@@ -247,6 +273,10 @@ opacity:1;
 transform:translateY(0);
 }
  
+
+
+
+
 /* TRUST */
 
 .trust{
@@ -419,6 +449,10 @@ width:28px;
 height:28px;
 }
 
+
+
+
+
 /* HERO */
 .hero{
 flex-direction:column;
@@ -446,6 +480,26 @@ justify-content:center;
 .hero img{
 width:100%;
 }
+
+.hero-buttons .btn{
+width:50px;
+height:50px;
+padding:0;
+border-radius:50%;
+
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.hero-buttons .btn .icon{
+width:24px;
+height:24px;
+}
+
+
+
+
 
 /* TRUST */
 .trust-grid{
@@ -479,8 +533,12 @@ margin:10px auto;
 .location{
 padding:48px 16px;
 }
-
 }
+
+
+
+
+
 
 /* =========================
    PRODUCT POPUP
@@ -589,6 +647,16 @@ color:white;
 transform:scale(1.1);
 }
 
+.close-btn{
+user-select: none;        /* prevents text selection */
+  -webkit-user-select: none;
+  outline: none;            /* removes focus outline */
+}
+.close-btn:focus{
+  outline: none;
+}
+
+
 
 
 
@@ -636,7 +704,18 @@ right:30px;
 font-size:40px;
 color:white;
 cursor:pointer;
+background:none;
+  border:none;
+  user-select:none;
+  outline:none;
 }
+.close-viewer:hover{
+  color:#c94f3d;   /* 🔥 only arrow changes */
+}
+
+
+
+
 
 
 
@@ -645,6 +724,8 @@ cursor:pointer;
 transition:transform 0.4s ease, box-shadow 0.3s ease;
 cursor:pointer;
 }
+
+
 
 
 /* Dot Indicators */
@@ -668,24 +749,33 @@ background:white;
 transform:scale(1.2);
 }
 
+
+
+
 /* navigation arrow */
 .nav-arrow{
-position:absolute;
-top:50%;
-transform:translateY(-50%);
-font-size:40px;
-color:white;
-cursor:pointer;
-padding:10px;
-background:rgba(0,0,0,0.3);
-border-radius:50%;
-transition:0.3s;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:40px;
+
+  color:white;
+  cursor:pointer;
+
+  padding:10px;
+
+  transition:0.3s;
+
+  background:none;
+  border:none;
+  user-select:none;
+  outline:none;
+
 }
 
 .nav-arrow:hover{
-background:#c94f3d;
-color:white;
-transform:translateY(-50%) scale(1.1);
+  color:#c94f3d;   /* 🔥 only arrow changes */
+  transform:translateY(-50%) scale(1.1);
 }
 
 .nav-arrow.left{
@@ -701,10 +791,28 @@ transition:opacity 0.3s ease;
 }
 
 .nav-arrow:active{
-background:#c94f3d;
-transform:translateY(-50%) scale(0.95);
+  color:#c94f3d;
+  transform:translateY(-50%) scale(0.95);
 }
 
+
+
+/* map */
+.map-container {
+  width: 100%;
+  max-width: 1000px; /* keeps it elegant, not too stretched */
+  margin: 30px auto 0;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 320px; /* 🔥 control height here */
+  border: 0;
+  display: block;
+}
 
 @media (max-width:768px){
 
@@ -718,16 +826,16 @@ font-size:28px;
 
 z-index:99999; /* extra safety for mobile */
 }
-
 }
+
 </style>
 </head>
 
 
 
+
+
 <body>
-
-
 
 <header>
 
@@ -763,22 +871,33 @@ z-index:99999; /* extra safety for mobile */
 
 <div class="hero-text">
 
-<h1>Shimla’s Most Trusted Premium Hardware Store</h1>
+<h1>Shimla’s Biggest Hardware Store for Tiles, Sanitary & Building Materials</h1>
 
 <p>
-Everything from construction materials to finishing hardware — trusted by contractors, builders, and homeowners across Shimla.
+Looking for tiles, sanitary fittings, wooden flooring or construction materials in Shimla? HT Trading Company offers premium hardware products trusted by homeowners and contractors.
 </p>
 
 <div class="hero-buttons">
-<a href="tel:+919816047057" class="btn">Call Now</a>
-<a href="https://wa.me/919816047057?text=Hi%20I%20want%20to%20check%20hardware%20prices" 
-class="btn" target="_blank">Message Now</a>
-<a href="https://maps.app.goo.gl/vivpnbVaL5xYy7yW7" target="_blank" class="btn">Visit Now</a>
-</div>
+
+<a href="#" class="btn" onclick="openCallPopup()">  
+<img src="icons/phone.svg" class="icon">
+</a>
+
+<a href="https://wa.me/918580450565?text=Hi%20I%20want%20to%20check%20hardware%20prices" 
+class="btn" target="_blank">
+  <img src="icons/whatsapp.svg" class="icon">
+</a>
+
+<a href="https://maps.app.goo.gl/vivpnbVaL5xYy7yW7" 
+target="_blank" class="btn">
+  <img src="icons/location.svg" class="icon">
+</a>
 
 </div>
 
-<img src="images/store.jpeg" alt="HT Trading Company Store">
+</div>
+
+<img src="images/store.jpeg" alt="HT Trading Company hardware store in Shimla exterior view">
 
 </section>
 
@@ -793,28 +912,30 @@ class="btn" target="_blank">Message Now</a>
 
 <div class="container">
 
-<h2 style="text-align:center;margin-bottom:40px;">Why Builders Trust HT Trading Company</h2>
+<h2 style="text-align:center;margin-bottom:40px;">Why We’re the Biggest & Most Trusted Hardware Store in Shimla</h2>
 
 <div class="trust-grid">
 
 <div class="trust-card">
 <h3>2000+</h3>
-<p>Hardware Products Available</p>
+<p>One of the biggest hardware product ranges in Shimla</p>
 </div>
 
 <div class="trust-card">
 <h3>9+ Years</h3>
-<p>Serving Shimla Builders & Homeowners</p></div>
+<p>Serving contractors & homeowners across Shimla</p></div>
 
 <div class="trust-card">
 <h3>Authorized Dealer</h3>
-<p>For Top Brands</p></div>
+<p>Genuine products from trusted brands</p></div>
 
 <div class="trust-card">
-<h3>Honest</h3>
-<p>Pricing</p>
-</div>
+<h3>Honest Pricing</h3>
+<p>Fair rates with no hidden costs</p></div>
 
+<div class="trust-card">
+<h3>Easy Returns</h3>
+<p>Flexible return policy for hassle-free purchases</p>
 </div>
 
 </div>
@@ -831,43 +952,40 @@ class="btn" target="_blank">Message Now</a>
 
 <div class="container">
 
-<h2 style="text-align:center;margin-bottom:40px;">Product Categories</h2>
+<h2 style="text-align:center;margin-bottom:40px;">Explore Our Product Categories</h2>
 
 <div class="category-grid">
 
 <div class="category-card">
 <p>Tiles, Adhesives & Sealants</p>
-<button class="btn" onclick="openPopup('Tiles, Adhesives & Sealants')">Samples</button>
+<button class="btn" onclick="openPopup('Tiles, Adhesives & Sealants')">View Ranges</button>
 
 </div>
 <div class="category-card">
 Sanitary & Bathroom Fitting<br><br>
-<button class="btn" onclick="openPopup('Sanitary & Bathroom Fitting')">Samples</button>
+<button class="btn" onclick="openPopup('Sanitary & Bathroom Fitting')">View Ranges</button>
 </div>
 
 <div class="category-card">
 Wooden Flooring & WPC Panels<br><br>
-<button class="btn" onclick="openPopup('Wooden Flooring & WPC')">Samples</button>
+<button class="btn" onclick="openPopup('Wooden Flooring & WPC')">View Ranges</button>
 </div>
 
 <div class="category-card">
 Geysers, Chimney, Cooktop & Aquagaurd<br><br>
-<button class="btn" onclick="openPopup('Electronic')">Samples</button>
+<button class="btn" onclick="openPopup('Electronic')">View Ranges</button>
 </div>
 
 <div class="category-card">
 Laminated MDF, HDHMR Boards & MICA<br><br>
-<button class="btn" onclick="openPopup('Laminated MDF, HDHMR Boards & MICA')">Samples</button>
+<button class="btn" onclick="openPopup('Laminated MDF, HDHMR Boards & MICA')">View Ranges</button>
 </div>
 
 <div class="category-card">
 Handles & Locks <br><br>
-<button class="btn" onclick="openPopup('Handles & Locks')">Samples</button>
-</div>
+<button class="btn" onclick="openPopup('Handles & Locks')">View Ranges</button></div>
 
 </div>
-
-
 
 </div>
 
@@ -884,7 +1002,7 @@ Handles & Locks <br><br>
 <section class="reviews reveal">
 
 <div class="container">
-<h2 style="text-align:center;margin-bottom:40px;">Trusted by Contractors & Homeowners</h2>
+<h2 style="text-align:center;margin-bottom:40px;">Trusted by everyone!</h2>
 
 <div class="review">
 ⭐ ⭐ ⭐ ⭐ ⭐  
@@ -928,16 +1046,17 @@ The collection of tiles, wooden boards, kitchen & sanitary hardware is pretty go
 
 <div class="container">
 
-<h2>Starting a Construction Project?</h2>
+<h2>Get the Right Materials Without the Guesswork.</h2>
 
-<p>Visit HT Trading Company for quality hardware and expert advice.</p>
+<p>Not sure which tiles, fitting, or materials to choose? <br>
+Talk to us directly and get expert advice.</p>
 
-<a href="tel:+919816047057" class="btn">Call Now</a>
-<a href="https://wa.me/919816047057?text=Hi%20I%20want%20to%20check%20hardware%20prices" 
+<a href="javascript:void(0)" class="btn" onclick="openCallPopup()">Call Now </a>
+
+<a href="https://wa.me/918580450565?text=Hi%20I%20want%20to%20check%20hardware%20prices" 
 class="btn" target="_blank">Message Now</a>
 
 </section>
-
 
 
 
@@ -947,20 +1066,24 @@ class="btn" target="_blank">Message Now</a>
 
 <div class="container">
 
-<h2>Visit Our Store</h2>
+<h2>Looking for a Hardware Store Near You in Shimla?</h2>
 
 <p>
 HT Trading Company<br>
 <b>Junga Rd., Mehli Shimla, Himachal Pradesh<br> 
-Pincode- 171013<br>
-Landmark- 100m ahead of Cozy Haven Homestay</b><br> 
-Open: 9 AM – 7 PM
+Landmark- 100m ahead of Cozy Haven Homestay</b><br>
 </p>
 
+
+<div class="map-container">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3417.4601357986367!2d77.18119457473169!3d31.06912537442373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39057f420b2123dd%3A0x1ad6be7222414378!2sH%20T%20Trading%20Company!5e0!3m2!1sen!2sin!4v1774285753670!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+    loading="lazy"
+    allowfullscreen>
+  </iframe>
 </div>
-
+<br> <b><p>Open: 9 AM – 7 PM </b></p>
 </section>
-
 
 
 
@@ -968,11 +1091,14 @@ Open: 9 AM – 7 PM
 <footer>
 <p>HT Trading Company</p>
 
-<p>Trusted hardware store for YOUR DREAM HOUSES.</p>
+<p>Reliable hardware store in Shimla offering tiles, sanitary fittings, wooden flooring and building materials for your dream home.</p>
 
 <p>© 2026 HT Trading Company</p>
 
 </footer>
+
+
+
 
 
 <!-- IMPORTANT FOR POPUP STRUCTURE -->
@@ -994,17 +1120,39 @@ Open: 9 AM – 7 PM
 
 </div>
 
-
 <!-- IMAGE FULL VIEW -->
 <div id="imageViewer" class="image-viewer">
-  <span class="close-viewer" onclick="closeImage()">×</span>
+  <button class="close-viewer" onclick="closeImage()">×</button>
   <img id="viewerImg">
 
-  <!-- ADD THIS -->
+  <!-- Dots -->
   <div class="image-dots" id="imageDots"></div>
-<span class="nav-arrow left" onclick="showPrev()">❮</span>
-<span class="nav-arrow right" onclick="showNext()">❯</span> 
+<button class="nav-arrow left" onclick="showPrev()">❮</button>
+<button class="nav-arrow right" onclick="showNext()">❯</button> 
 </div>
+
+  <!-- call option -->
+<div id="callPopup" class="popup">
+  <div class="popup-content" style="max-width:400px;text-align:center;">
+
+    <span class="close-btn" onclick="closeCallPopup()">×</span>
+
+    <h2 style="margin-bottom:20px;">Choose Number</h2>
+
+    <a href="tel:+919816047057" class="btn" style="display:block;margin:10px 0;">
+      📞 Call Owner
+    </a>
+
+    <a href="tel:+918580450565" class="btn" style="display:block;margin:10px 0;">
+      📞 Call Store
+    </a>
+
+  </div>
+</div>
+
+
+
+
 
 
 <script>
@@ -1033,6 +1181,23 @@ function animationLoop(){
 animationLoop();
 
 
+
+
+/* =========================
+   Call options
+========================= */
+function openCallPopup(){
+  document.getElementById("callPopup").classList.add("active");
+}
+
+function closeCallPopup(){
+  document.getElementById("callPopup").classList.remove("active");
+}
+
+
+
+
+
 /* =========================
    POPUP SYSTEM
 ========================= */
@@ -1051,17 +1216,17 @@ function openPopup(category){
     title.innerText = "From Floor to Finish — Built to Impress";
 
     container.innerHTML = `
-      <img src="tiles/all-weather-tile.png" onclick="openImage(this.src)">
-      <img src="tiles/all-weather-tiles.png" onclick="openImage(this.src)">
-      <img src="tiles/stone-tile.png" onclick="openImage(this.src)">
-      <img src="tiles/wood-tile.png" onclick="openImage(this.src)">
-      <img src="tiles/ceramic-tiles.png" onclick="openImage(this.src)">
-      <img src="tiles/matte-tile.png" onclick="openImage(this.src)">
-      <img src="tiles/matte-tiles.png" onclick="openImage(this.src)">
-      <img src="tiles/vitrified-tile.png" onclick="openImage(this.src)">
-      <img src="tiles/vitrified-tiles.png" onclick="openImage(this.src)">
-      <img src="tiles/porcelain-tiles.png" onclick="openImage(this.src)">
-      <img src="tiles/adhesive-and-sealants.png" onclick="openImage(this.src)">
+      <img src="tiles/all-weather-tile.png" alt="All weather outdoor tiles for balcony and terrace" onclick="openImage(this.src)">
+      <img src="tiles/all-weather-tiles.png" alt="Durable exterior tiles for cold weather homes" onclick="openImage(this.src)">
+      <img src="tiles/stone-tile.png" alt="Stone finish wall and floor tiles natural look" onclick="openImage(this.src)">
+      <img src="tiles/wood-tile.png" alt="Wood finish floor tiles for living room" onclick="openImage(this.src)">
+      <img src="tiles/ceramic-tiles.png" alt="Ceramic tiles for kitchen and bathroom walls" onclick="openImage(this.src)">
+      <img src="tiles/matte-tile.png" alt="Matte finish anti slip floor tiles" onclick="openImage(this.src)">
+      <img src="tiles/matte-tiles.png" alt="Modern matte tiles for home interiors" onclick="openImage(this.src)">
+      <img src="tiles/vitrified-tile.png" alt="Vitrified tiles for high durability flooring" onclick="openImage(this.src)">
+      <img src="tiles/vitrified-tiles.png" alt="Premium vitrified floor tiles glossy finish" onclick="openImage(this.src)">
+      <img src="tiles/porcelain-tiles.png" alt="Porcelain tiles for luxury interiors" onclick="openImage(this.src)">
+      <img src="tiles/adhesive-and-sealants.png" alt="Tile adhesive and sealants for strong fixing" onclick="openImage(this.src)">
     `;
   }
 
@@ -1069,19 +1234,19 @@ function openPopup(category){
     title.innerText = "Where Comfort Meets Craftsmanship";
 
     container.innerHTML = `
-      <img src="sanitary/washbasin.png" onclick="openImage(this.src)">
-      <img src="sanitary/one-piece-seats.png" onclick="openImage(this.src)">
-      <img src="sanitary/single-piece-sinks.png" onclick="openImage(this.src)">
-      <img src="sanitary/wall-hanging-seats.png" onclick="openImage(this.src)">
-      <img src="sanitary/hand-shower-set.png" onclick="openImage(this.src)">
-      <img src="sanitary/round-shower.png" onclick="openImage(this.src)">
-      <img src="sanitary/shower.png" onclick="openImage(this.src)">
-      <img src="sanitary/fitting.png" onclick="openImage(this.src)">
-      <img src="sanitary/bathroom-fitting.png" onclick="openImage(this.src)">
-      <img src="sanitary/gi-pipe.png" onclick="openImage(this.src)">
-      <img src="sanitary/swr-fitting.png" onclick="openImage(this.src)">
-      <img src="sanitary/swr-pipes.png" onclick="openImage(this.src)">
-      <img src="sanitary/solvent.jpeg" onclick="openImage(this.src)">
+  <img src="sanitary/washbasin.png" alt="Modern ceramic wash basin for bathroom" onclick="openImage(this.src)">
+  <img src="sanitary/one-piece-seats.png" alt="One piece toilet seats western style" onclick="openImage(this.src)">
+  <img src="sanitary/single-piece-sinks.png" alt="Single piece wash basin sink" onclick="openImage(this.src)">
+  <img src="sanitary/wall-hanging-seats.png" alt="Wall mounted toilet seat modern bathroom" onclick="openImage(this.src)">
+  <img src="sanitary/hand-shower-set.png" alt="Hand shower set with pipe bathroom fitting" onclick="openImage(this.src)">
+  <img src="sanitary/round-shower.png" alt="Round overhead shower modern design" onclick="openImage(this.src)">
+  <img src="sanitary/shower.png" alt="Luxury shower system bathroom fitting" onclick="openImage(this.src)">
+  <img src="sanitary/fitting.png" alt="Bathroom fittings and accessories set" onclick="openImage(this.src)">
+  <img src="sanitary/bathroom-fitting.png" alt="Complete bathroom hardware fittings" onclick="openImage(this.src)">
+  <img src="sanitary/gi-pipe.png" alt="GI pipes for plumbing and water supply" onclick="openImage(this.src)">
+  <img src="sanitary/swr-fitting.png" alt="SWR pipe fittings drainage system" onclick="openImage(this.src)">
+  <img src="sanitary/swr-pipes.png" alt="SWR pipes for waste water management" onclick="openImage(this.src)">
+  <img src="sanitary/solvent.jpeg" alt="Plumbing solvent for pipe fixing" onclick="openImage(this.src)">
     `;
   }
 
@@ -1089,14 +1254,14 @@ function openPopup(category){
     title.innerText = "Warmth Under Your Feet, Strength Beneath";
 
     container.innerHTML = `
-      <img src="wooden-flooring/laminated-kitchen-boards.png" onclick="openImage(this.src)">
-      <img src="wooden-flooring/wooden-flooring.png" onclick="openImage(this.src)">
-      <img src="wooden-flooring/action-tesa-wooden-flooring.png" onclick="openImage(this.src)">
-      <img src="wooden-flooring/wpc-panels.png" onclick="openImage(this.src)">
-      <img src="wooden-flooring/louver.jpeg" onclick="openImage(this.src)">
-      <img src="wooden-flooring/louvers.jpeg" onclick="openImage(this.src)">
-      <img src="wooden-flooring/wpc-louver.jpeg" onclick="openImage(this.src)">
-      <img src="wooden-flooring/wpc-panel.jpeg" onclick="openImage(this.src)">
+  <img src="wooden-flooring/laminated-kitchen-boards.png" alt="Laminated kitchen boards moisture resistant" onclick="openImage(this.src)">
+  <img src="wooden-flooring/wooden-flooring.png" alt="Wooden flooring panels for home interiors" onclick="openImage(this.src)">
+  <img src="wooden-flooring/action-tesa-wooden-flooring.png" alt="Action Tesa wooden flooring premium quality" onclick="openImage(this.src)">
+  <img src="wooden-flooring/wpc-panels.png" alt="WPC wall panels waterproof interior design" onclick="openImage(this.src)">
+  <img src="wooden-flooring/louver.jpeg" alt="Decorative wall louvers modern design" onclick="openImage(this.src)">
+  <img src="wooden-flooring/louvers.jpeg" alt="Wooden louvers for wall paneling" onclick="openImage(this.src)">
+  <img src="wooden-flooring/wpc-louver.jpeg" alt="WPC louvers waterproof wall panels" onclick="openImage(this.src)">
+  <img src="wooden-flooring/wpc-panel.jpeg" alt="WPC panels for exterior and interior walls" onclick="openImage(this.src)">
     `;
   }
 
@@ -1104,36 +1269,35 @@ function openPopup(category){
     title.innerText = "Smart Living Starts Here";
 
     container.innerHTML = `
-      <img src="electric/geyser.png" onclick="openImage(this.src)">
-      <img src="electric/chimneys.png" onclick="openImage(this.src)">
-      <img src="electric/chimney.png" onclick="openImage(this.src)">
-    `;
+  <img src="electric/geyser.png" alt="Electric geyser for hot water bathroom" onclick="openImage(this.src)">
+  <img src="electric/chimneys.png" alt="Kitchen chimneys for smoke ventilation" onclick="openImage(this.src)">
+  <img src="electric/chimney.png" alt="Modern kitchen chimney stainless steel" onclick="openImage(this.src)">
+`;
   }
 
   else if(category === "Laminated MDF, HDHMR Boards & MICA"){
     title.innerText = "Built Strong. Finished Beautiful.";
 
     container.innerHTML = `
-      <img src="ply/pine.png" onclick="openImage(this.src)">
-      <img src="ply/insulator.png" onclick="openImage(this.src)">
-      <img src="ply/laminated-boards.png" onclick="openImage(this.src)">
-      <img src="ply/batte.png" onclick="openImage(this.src)">
-      <img src="ply/wood-ply.png" onclick="openImage(this.src)">
-      <img src="ply/hdhmr-board.png" onclick="openImage(this.src)">
-    `;
+  <img src="ply/pine.png" alt="Pine wood boards for furniture and construction" onclick="openImage(this.src)">
+  <img src="ply/insulator.png" alt="Electrical insulation board material" onclick="openImage(this.src)">
+  <img src="ply/laminated-boards.png" alt="Laminated boards for furniture and cabinets" onclick="openImage(this.src)">
+  <img src="ply/batte.png" alt="Wooden batten for structural support" onclick="openImage(this.src)">
+  <img src="ply/wood-ply.png" alt="Plywood sheets for furniture and interiors" onclick="openImage(this.src)">
+  <img src="ply/hdhmr-board.png" alt="HDHMR board high density moisture resistant" onclick="openImage(this.src)">
+`;
   }
 
   else if(category === "Handles & Locks"){
     title.innerText = "Security Meets Style";
 
     container.innerHTML = `
-      <img src="locks/handels.png" onclick="openImage(this.src)">
-      <img src="locks/kundi-mashbar.png" onclick="openImage(this.src)">
-      <img src="locks/cabinet-door-handels.png" onclick="openImage(this.src)">
-    `;
+  <img src="locks/handels.png" alt="Door handles modern design hardware" onclick="openImage(this.src)">
+  <img src="locks/kundi-mashbar.png" alt="Door kundi and mashbar security hardware" onclick="openImage(this.src)">
+  <img src="locks/cabinet-door-handels.png" alt="Cabinet door handles stylish design" onclick="openImage(this.src)">
+`;
   }
 }
-
 
 /* CLOSE POPUP */
 function closePopup(){
@@ -1147,6 +1311,8 @@ window.onclick = function(e){
     popup.classList.remove("active");
   }
 }
+
+
 
 
 /* =========================
@@ -1202,6 +1368,8 @@ function showPrev(){
 }
 
 
+
+
 /* =========================
    SAFE EVENT LISTENERS
 ========================= */
@@ -1215,6 +1383,8 @@ document.addEventListener("DOMContentLoaded", function(){
   let mouseDown = false;
   let zoomLevel = 1;
 
+
+
   /* TOUCH SWIPE */
   viewer.addEventListener("touchstart", (e)=>{
     startX = e.touches[0].clientX;
@@ -1227,22 +1397,7 @@ document.addEventListener("DOMContentLoaded", function(){
     else if(endX - startX > 50) showPrev();
   });
 
-  /* DESKTOP DRAG */
-  viewer.addEventListener("mousedown", (e)=>{
-    mouseDown = true;
-    startX = e.clientX;
-  });
 
-  viewer.addEventListener("mouseup", (e)=>{
-    if(!mouseDown) return;
-
-    let endX = e.clientX;
-
-    if(startX - endX > 50) showNext();
-    else if(endX - startX > 50) showPrev();
-
-    mouseDown = false;
-  });
 
   /* SCROLL ZOOM */
   img.addEventListener("wheel", function(e){
@@ -1255,6 +1410,9 @@ document.addEventListener("DOMContentLoaded", function(){
   });
 
 });
+
+
+
 
 
 /* =========================

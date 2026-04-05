@@ -1,0 +1,1670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Premium hardware store in Shimla offering tiles, sanitary, fittings, wooden flooring & construction materials. Visit H.T. Trading Company today.">
+<link rel="icon" href="images/logo.png" type="image/png">
+<title> Shimla's Hardware Store | H.T. Trading Company </title>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HardwareStore",
+  "name": "HT Trading Company",
+  "image": "https://yourdomain.com/images/store.jpeg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Junga Rd., Mehli",
+    "addressLocality": "Shimla",
+    "addressRegion": "Himachal Pradesh",
+    "postalCode": "171013",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "31.069299979208264",
+    "longitude": "77.18376949535264"
+  },
+  "url": "https://yourdomain.com",
+  "telephone": "+91-9816047057",
+  "openingHours": "Mo-Su 09:00-19:00",
+  "sameAs": [
+    "https://www.instagram.com/ht_trading_company_shimla/",
+    "https://www.facebook.com/profile.php?id=61561429820728"
+  ]
+}
+</script>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+
+<style>
+
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Poppins, sans-serif;
+background:#dae3e6;
+color:#0c234e;
+line-height:1.6;
+}
+
+.container{
+width:90%;
+max-width:1600px;
+margin:auto;
+}
+
+h1,h2,h3{
+color:#0c234e;
+}
+
+
+
+
+
+/* HEADER */
+header{
+position:sticky;
+top:0;
+z-index:1000;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:32px;
+background:#dae3e6;
+}
+
+.section-divider{
+  width:160px;
+  height:8px;
+  background:linear-gradient(to right, transparent, #b57b3c, transparent);
+  margin:60px auto; /* 🔥 FIX */
+  border-radius:2px;
+}
+.logo{
+display:flex;
+align-items:center;
+gap:24px;
+}
+
+.logo img{
+height:88px;
+width:auto;
+}
+
+.logo-text{
+font-weight:680;
+font-size:32px;
+color:#0c234e;
+letter-spacing:0.5px;
+}
+
+.btn{
+background:#b57b3c;
+color:white;
+padding:12px 22px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+display:inline-block;
+transition:all 0.3s ease;
+}
+
+.btn:hover{
+background:#c94f3d;
+transform:translateY(-4px) scale(1.03);
+box-shadow:0 12px 25px rgba(0,0,0,0.25);
+}
+
+.btn:active{
+transform:scale(0.96);
+box-shadow:0 3px 8px rgba(0,0,0,0.2);
+}
+
+.header-actions{
+display:flex;
+gap:18px;
+align-items:center;
+}
+
+.header-actions a{
+width:52px;
+height:52px;
+display:flex;
+align-items:center;
+justify-content:center;
+background:white;
+border-radius:50%;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+transition:all 0.3s ease;
+}
+
+.header-actions .icon{
+width:26px;
+height:26px;
+}
+
+.header-actions a:hover{
+transform:translateY(-3px) scale(1.05);
+box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Brand hover colors */
+.header-actions a:nth-child(1):hover{
+background:#c94f3d; /* Call */
+}
+
+.header-actions a:nth-child(2):hover{
+background:#25D366; /* WhatsApp */
+}
+
+.header-actions a:nth-child(3):hover{
+background:#0c234e; /* Location */
+}
+
+.header-actions a:hover .icon{
+filter:brightness(0) invert(1);
+}
+
+
+
+
+
+
+/* HERO LOAD ANIMATION */
+.hero{
+opacity:0;
+animation:fadeInHero 1s ease forwards;
+}
+
+@keyframes fadeInHero{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+
+
+
+
+/* HERO */
+
+.hero{
+padding:40px 0;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:60px;
+flex-wrap:wrap;
+}
+
+.hero-text{
+flex:1;
+max-width:550px;
+}
+
+.hero-text h1{
+font-size:48px;
+line-height:1.2;
+margin-bottom:20px;
+}
+
+.hero-text p{
+color:#c94f3d;
+font-size:18px;
+margin-bottom:35px;
+max-width:500px;
+}
+
+.hero-buttons{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.hero-buttons .btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+
+  width:50px;
+  height:50px;
+  padding:0;
+  border-radius:10%;
+}
+
+.hero-buttons .icon{
+  width:24px;
+  height:24px;
+}
+
+.hero img{
+width:500px;
+max-width:100%;
+border-radius:14px;
+box-shadow:0 15px 40px rgba(0,0,0,0.2);
+}
+
+
+
+
+
+
+/* SCROLL ANIMATION BASE */
+
+.reveal{
+opacity:0;
+transform:translateY(40px);
+transition:all 0.8s ease;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
+ 
+
+
+
+
+
+/* BRANDS*/
+.brands {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.brands-title {
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #0c234e;
+}
+
+.brand-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+}
+
+.brand-logos img {
+  height: 72px;
+  opacity: 0.6;
+  transition: 0.3s ease;
+  filter: grayscale(50%);
+}
+
+.brand-logos img:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+  transform: scale(1.4);
+}
+
+
+
+
+
+/* TRUST */
+
+.trust{
+padding:8px 0;
+background:#dae3e6;
+}
+
+.trust-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:30px;
+text-align:center;
+}
+
+.trust-card{
+background:white;
+color:#c94f3d;
+padding:24px;
+border-radius:10px;
+box-shadow:0 4px 8px rgba(0,0,0,0.1);
+transition:transform 1s ease;
+}
+.trust-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+
+
+
+
+
+/* CATEGORIES */
+
+.categories{
+padding:8px 0;
+}
+
+.category-grid{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:24px;
+}
+
+.category-card{
+background:white;
+color:#c94f3d;
+padding:32px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 4px 8px rgba(0,0,0,0.1);
+width:248px;
+display:flex;              /* 🔥 important */
+  flex-direction:column;
+  justify-content:space-between;
+
+  transition:transform 0.3s ease;
+}
+
+.card-content{
+  flex-grow:1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.category-card p{
+margin-bottom:16px;
+}
+
+.category-card .btn{
+  outline: none;
+  box-shadow: none;
+border: none;
+}
+.category-card .btn:hover{
+transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+.category-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+
+
+/* SEO */
+.seo-text {
+  padding: 8px 0;
+}
+
+.seo-intro {
+  text-align: center;
+  max-width: 696px;
+  margin: 0 auto 40px;
+  font-size: 17px;
+  color: #0c234e;
+text-align: center;
+  opacity: 0.8;
+
+}
+
+.seo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.seo-box {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  text-align: left;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  transition: 0.3s;
+ width:260px;
+}
+
+.seo-box h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #0c234e;
+text-align: center;
+}
+
+.seo-box p {
+  font-size: 14px;
+  color: #c94f3d;
+text-align: center;
+}
+
+.seo-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+}
+.seo-text h2 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+
+
+/* REVIEWS */
+
+.reviews{
+background:#dae3e6;
+padding:8px 0;
+}
+
+.review{
+margin-bottom:32px;
+}
+
+
+
+
+
+/* CTA */
+.cta{
+background:#0c234e;
+color:white;
+text-align:center;
+padding:48px 24px;
+}
+
+.cta h2{
+color:white;
+margin-bottom:8px;
+}
+
+.cta p{
+margin-bottom:16px;
+}
+
+.cta a{
+background:#b57b3c;
+padding:16px 80px;
+border-radius:6px;
+color:white;
+text-decoration:none;
+margin:16px;
+display:inline-block;
+}
+
+
+
+
+
+
+/* LOCATION */
+
+.location{
+padding:48px 0;
+color:#c94f3d;
+text-align:center;
+}
+
+
+
+
+
+/* FOOTER */
+
+footer{
+background:#0c234e;
+color:white;
+text-align:center;
+padding: 24px 16px 32px; /* 🔥 less top, more bottom */
+}
+
+
+footer a{
+color:#b57b3c;
+text-decoration:none;
+}
+
+.footer-social{
+display:flex;
+justify-content:center;
+gap:16px;
+margin:16px 0;
+}
+
+.footer-social a{
+width:48px;
+height:48px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+background:white;
+color:#0c234e;
+text-decoration:none;
+transition:0.3s;
+}
+
+.footer-social svg{
+width:24px;
+height:24px;
+}
+
+.footer-social a:hover{
+transform:translateY(-3px);
+box-shadow:0 6px 14px rgba(0,0,0,0.2);
+}
+
+.footer-social a:nth-child(1):hover{
+background:#E4405F;
+color:white;
+}
+
+.footer-social a:nth-child(2):hover{
+background:#1877F2;
+color:white;
+}
+
+
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px){
+
+/* HEADER */
+header{
+flex-direction:column;
+gap:16px;
+text-align:center;
+}
+
+.logo{
+justify-content:center;
+}
+
+.social-icons{
+gap:16px;
+}
+
+.social-icons a{
+width:50px;
+height:50px;
+}
+
+.social-icons svg{
+width:28px;
+height:28px;
+}
+
+
+
+
+
+/* HERO */
+.hero{
+flex-direction:column;
+text-align:center;
+padding:40px 0;
+gap:30px;
+}
+
+.hero-text{
+max-width:100%;
+}
+
+.hero-text h1{
+font-size:28px;
+}
+
+.hero-text p{
+font-size:16px;
+}
+
+.hero-buttons{
+justify-content:center;
+}
+
+.hero img{
+width:100%;
+}
+
+.hero-buttons .btn{
+width:50px;
+height:50px;
+padding:0;
+border-radius:50%;
+
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.hero-buttons .btn .icon{
+width:24px;
+height:24px;
+}
+
+
+
+
+
+/* TRUST */
+.trust-grid{
+grid-template-columns:1fr;
+}
+
+/* CATEGORIES */
+.category-grid{
+flex-direction:column;
+align-items:center;
+}
+
+/* REVIEWS */
+.review{
+font-size:14px;
+}
+
+/* CTA */
+.cta{
+padding:48px 16px;
+}
+
+.cta a{
+display:block;
+width:100%;
+max-width:280px;
+margin:10px auto;
+}
+
+/* LOCATION */
+.location{
+padding:48px 16px;
+}
+}
+
+
+
+
+
+
+/* =========================
+   PRODUCT POPUP
+========================= */
+
+.popup{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+backdrop-filter: blur(8px);
+background: rgba(0,0,0,0.4);
+
+display:flex;
+align-items:center;
+justify-content:center;
+pointer-events: none;
+
+opacity:0;
+visibility:hidden;
+transition:0.3s ease;
+
+z-index:2000;
+}
+
+.popup.active{
+opacity:1;
+visibility:visible;
+pointer-events: all;
+}
+
+.popup-content{
+background:white;
+width:70%;
+max-width:900px;
+max-height:85vh;
+overflow-y:auto;
+padding:24px;
+border-radius:14px;
+box-shadow:0 20px 50px rgba(0,0,0,0.3);
+transform:scale(0.9);
+transition:0.3s ease;
+margin-bottom: 28px;   /* space below heading */
+line-height: 1.3;
+position: relative;   /* 🔥 IMPORTANT */
+}
+
+.popup-content h2{
+margin-bottom: 24px;   /* space below heading */
+line-height: 1.3;
+padding-right: 50px;
+}
+.popup.active .popup-content{
+transform:scale(1);
+}
+
+.popup-images img{
+width:100%;
+border-radius:8px;
+margin-bottom:12px;
+height:140px;
+object-fit:cover;
+/* POPUP IMAGE HOVER */
+transition:transform 0.4s ease, box-shadow 0.3s ease;
+cursor:pointer;
+}
+
+
+.popup-images{
+display:grid;
+grid-template-columns:repeat(auto-fit, minmax(150px, 1fr));
+gap:12px;
+position:relative;
+z-index:1;
+}
+
+.close-btn{
+position: absolute;
+top: 16px;
+right: 16px;
+z-index:9999;  /* enough, no need 9999 */
+background:white;
+
+width:42px;
+height:42px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+font-size:26px;
+
+cursor:pointer;
+box-shadow:0 6px 16px rgba(0,0,0,0.25);
+transition:0.3s;
+pointer-events:auto;
+}
+
+.close-btn:hover{
+background:#c94f3d;
+color:white;
+transform:scale(1.1);
+}
+
+.close-btn{
+user-select: none;        /* prevents text selection */
+  -webkit-user-select: none;
+  outline: none;            /* removes focus outline */
+}
+.close-btn:focus{
+  outline: none;
+}
+
+
+
+
+
+/* IMAGE ZOOM VIEWER */
+.image-viewer{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.9);
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+opacity:0;
+visibility:hidden;
+transition:opacity 0.4s ease;
+z-index:3000;
+}
+
+.image-viewer.active{
+opacity:1;
+visibility:visible;
+}
+
+.image-viewer img{
+max-width:90%;
+max-height:90%;
+border-radius:12px;
+
+transform:scale(0.85);
+transition:transform 0.4s ease;
+}
+
+.image-viewer.active img{
+transform:scale(1);
+}
+
+.close-viewer{
+position:absolute;
+top:20px;
+right:30px;
+font-size:40px;
+color:white;
+cursor:pointer;
+background:none;
+  border:none;
+  user-select:none;
+  outline:none;
+}
+.close-viewer:hover{
+  color:#c94f3d;   /* 🔥 only arrow changes */
+}
+
+
+
+/* Dot Indicators */
+.image-dots{
+position:absolute;
+bottom:20px;
+display:flex;
+gap:8px;
+}
+
+.image-dots span{
+width:10px;
+height:10px;
+border-radius:50%;
+background:rgba(255,255,255,0.4);
+transition:0.3s;
+}
+
+.image-dots span.active{
+background:white;
+transform:scale(1.2);
+}
+
+
+
+
+/* navigation arrow */
+.nav-arrow{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:40px;
+
+  color:white;
+  cursor:pointer;
+
+  padding:10px;
+
+  transition:0.3s;
+
+  background:none;
+  border:none;
+  user-select:none;
+  outline:none;
+
+}
+
+.nav-arrow:hover{
+  color:#c94f3d;   /* 🔥 only arrow changes */
+  transform:translateY(-50%) scale(1.1);
+}
+
+.nav-arrow.left{
+left:20px;
+}
+
+.nav-arrow.right{
+right:20px;
+}
+
+#viewerImg{
+transition:opacity 0.3s ease;
+}
+
+.nav-arrow:active{
+  color:#c94f3d;
+  transform:translateY(-50%) scale(0.95);
+}
+
+
+
+/* map */
+.map-container {
+  width: 100%;
+  max-width: 1000px; /* keeps it elegant, not too stretched */
+  margin: 30px auto 0;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 320px; /* 🔥 control height here */
+  border: 0;
+  display: block;
+}
+
+@media (max-width:768px){
+
+.close-btn{
+top:12px;
+right:12px;
+
+width:48px;
+height:48px;
+font-size:28px;
+
+z-index:1000; /* extra safety for mobile */
+}
+.header-actions{
+gap:12px;
+}
+
+.header-actions a{
+width:44px;
+height:44px;
+}
+
+.header-actions .icon{
+width:22px;
+height:22px;
+}
+}
+
+</style>
+</head>
+
+
+
+
+
+<body>
+
+<header>
+
+<div class="logo">
+  <img src="images/logo.png" alt="HT Trading Company Logo">
+  <div class="logo-text">HT Trading Company</div>
+</div>
+
+<div class="header-actions">
+
+  <!-- Call -->
+  <a href="javascript:void(0)"  onclick="openCallPopup()" title="Call Now">
+    <img src="icons/phone.svg" alt="Call HT Trading Company Shimla" class="icon ">
+  </a>
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/918580450565?text=Hi%20I%20want%20to%20check%20hardware%20prices"
+     target="_blank" rel="noopener noreferrer" title="Message on WhatsApp">
+    <img src="icons/whatsapp.svg" alt="Message HT Trading Company Shimla" class="icon">
+  </a>
+
+  <!-- Location -->
+  <a href="https://maps.app.goo.gl/vivpnbVaL5xYy7yW7"
+     target="_blank" rel="noopener noreferrer" title="Get Directions">
+    <img src="icons/location.svg" alt="Location of HT Trading Company Shimla" class="icon">
+  </a>
+
+</div>
+
+
+</header>
+
+
+
+
+<section class="hero container">
+
+<div class="hero-text">
+
+<h1>Shimla’s Biggest Hardware Store</h1>
+
+<p>
+Get Best Price on tiles, sanitary, fittings, wooden flooring or construction materials in Shimla. H.T. Trading Company offers premium hardware products from Premium and Trusted brands.
+</p>
+
+
+</div>
+
+<img src="images/store.jpeg"  alt="HT Trading Company hardware store in Shimla exterior view">
+
+
+</section>
+
+
+<div class="section-divider"></div>
+
+
+
+
+<section class="brands reveal">
+  <div class="container">
+    <h2 class="brands-title">Authorized Dealers of India’s Top Brands</h2>
+    <div class="brand-logos">
+
+<img src="brands/kajaria.webp"       alt="Kajaria Premium Tiles Dealer Shimla">
+<img src="brands/rak.webp"           alt="RAK Premium Tiles Dealer Shimla">
+<img src="brands/simpolo.webp"       alt="Simpolo Premium Tiles Dealer Shimla">
+<img src="brands/action-tesa.webp"   alt="Action Tesa Door, Boards, Flooring Dealer in Shimls">
+<img src="brands/spider.webp"        alt="Spider Cabinet Handels, Lock for security Shimla">
+<img src="brands/atom.webp"          alt="Atom Door Locks Shimla">
+<img src="brands/cera.webp"          alt="CERA Sanitary wholeseller Shimla">
+<img src="brands/finolex.webp"       alt="Finolex Piping for House Shimla">
+<img src="brands/glazonoid.webp"     alt="Mirror for Batroom Shimla">
+<img src="brands/heights.webp"       alt="PVC Pannels wholeseller Shimla">
+<img src="brands/advance.webp"       alt="Advance 2day MICA Shimla">
+<img src="brands/hettich.webp"       alt="Hettich Premium Fitting Shimla">
+<img src="brands/ultratech.webp"     alt="Ultratech Grout Shimla">
+<img src="brands/fevicol.webp"       alt="Fevicol Seals for every Project Shimla">
+
+
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+
+
+<section class="trust reveal">
+
+<div class="container">
+
+<h2 style="text-align:center;margin-bottom:40px;">Why We’re the Biggest & Most Trusted</h2>
+
+<div class="trust-grid">
+
+<div class="trust-card">
+<h3>2000+</h3>
+<p>One of the biggest hardware product ranges in Shimla</p>
+</div>
+
+<div class="trust-card">
+<h3>9+ Years</h3>
+<p>Serving contractors & homeowners across Shimla</p></div>
+
+<div class="trust-card">
+<h3>Authorized Dealer</h3>
+<p>Genuine products from trusted brands</p></div>
+
+<div class="trust-card">
+<h3>Honest Pricing</h3>
+<p>Fair rates with no hidden costs</p></div>
+
+<div class="trust-card">
+<h3>Easy Returns</h3>
+<p>Flexible return policy for hassle-free purchases</p>
+</div>
+
+</div>
+
+</section>
+
+<div class="section-divider"></div>
+
+
+
+
+
+<section class="categories reveal">
+
+<div class="container">
+
+<h2 style="text-align:center;margin-bottom:40px;">Explore Our Catalog</h2>
+
+<div class="category-grid">
+
+<div class="category-card">
+<p>Tiles, Adhesives & Sealants</p>
+<button class="btn" onclick="openPopup('Tiles, Adhesives & Sealants')">View Ranges</button>
+
+</div>
+<div class="category-card">
+<p>Sanitary & Bathroom Fitting </p>
+<button class="btn" onclick="openPopup('Sanitary & Bathroom Fitting')">View Ranges</button>
+</div>
+
+<div class="category-card">
+<p>Wooden Flooring & WPC Panels</p>
+<button class="btn" onclick="openPopup('Wooden Flooring & WPC')">View Ranges</button>
+</div>
+
+<div class="category-card">
+<p>Geysers, Chimney, Cooktop & Aquagaurd</p>
+<button class="btn" onclick="openPopup('Electronic')">View Ranges</button>
+</div>
+
+<div class="category-card">
+<p>Laminated MDF, HDHMR Boards & MICA</p>
+<button class="btn" onclick="openPopup('Laminated MDF, HDHMR Boards & MICA')">View Ranges</button>
+</div>
+
+<div class="category-card">
+<p>Handles, Locks, & Furniture Fitting</p>
+<button class="btn" onclick="openPopup('Handles & Locks')">View Ranges</button></div>
+
+</div>
+
+</div>
+
+</section>
+
+<div class="section-divider"></div>
+
+
+
+
+<section class="seo-text">
+  <div class="container">
+
+    <h2>Everything You Need for Your Home — All in One Place</h2>
+
+    <p class="seo-intro">
+      Building, renovating, or just upgrading? You don’t need 10 different shops.<br>
+      At <b>H.T. Trading Company</b>, you get everything — from tiles to fittings — right here in Shimla.
+    </p>
+
+        <div class="seo-grid">
+
+ <div class="seo-box">
+    <h3>🔨 Hardware Store in Shimla</h3>
+    <p>From daily essentials to heavy-duty materials — we stock what builders and homeowners actually need.</p>
+  </div>
+
+      <div class="seo-box">
+        <h3>🧱 Tiles, Adhesives & Flooring</h3>
+        <p>Premium tiles, wooden flooring, and all-weather options for homes that last.</p>
+      </div>
+
+      <div class="seo-box">
+        <h3>🚿 Sanitary & Bathroom Fittings</h3>
+        <p>Wash basins, showers, pipes and fittings — everything for a complete bathroom setup.</p>
+      </div>
+
+      <div class="seo-box">
+        <h3>🪵 Boards, MICA & HDHMR Doors</h3>
+        <p>MDF, HDHMR boards, laminates and ready doors for strong, stylish interiors.</p>
+      </div>
+
+      <div class="seo-box">
+        <h3>🔐 Locks, Handles & Hardware</h3>
+        <p>Door locks, gate locks, cabinet and almirah handles — security with smooth design.</p>
+      </div>
+
+      <div class="seo-box">
+        <h3>🔥 Kitchen & Home Appliances</h3>
+        <p>Chimneys, cooktops, geysers — modern solutions for everyday living.</p>
+      </div>
+
+    </div>
+  </div>
+
+<div class="section-divider"></div>
+
+
+
+<section class="reviews reveal">
+
+<div class="container">
+
+<h2 style="text-align:center; font-size:24px; font-weight:600; margin-bottom:20px;">
+Still thinking? See what our Customers Say Before You Decide
+</h2>
+
+<!-- GOOGLE REVIEWS WIDGET -->
+<div class="google-reviews">
+ <script defer async src='https://cdn.trustindex.io/loader.js?3cc88f468f2d87993a76c8d7212'></script>
+</div>
+
+</div>
+</section>
+
+
+
+
+
+<section class="cta reveal">
+
+<div class="container">
+
+<h2>It's High Time Contact us Now!</h2>
+
+<p>Talk to us directly and get expert advice!</p>
+
+<a href="javascript:void(0)" class="btn" onclick="openCallPopup()">Call Now </a>
+
+<a href="https://wa.me/918580450565?text=Hi%20I%20want%20to%20check%20hardware%20prices" 
+class="btn" target="_blank" rel="noopener noreferrer">Message Now</a>
+
+</section>
+
+
+
+
+
+<section class="location reveal">
+
+<div class="container">
+
+<h2>Visit Now for the Best Offers!</h2>
+
+<p>
+H.T. Trading Company<br>
+<b>Junga Rd, Mehli Shimla, Himachal Pradesh<br> 
+Landmark- 100m ahead of Cozy Haven Homestay</b><br>
+</p>
+
+
+<div class="map-container">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3417.4601357986367!2d77.18119457473169!3d31.06912537442373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39057f420b2123dd%3A0x1ad6be7222414378!2sH%20T%20Trading%20Company!5e0!3m2!1sen!2sin!4v1774285753670!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen=" "loading="lazy" referrerpolicy="no-referrer"
+    allowfullscreen>
+  </iframe>
+</div>
+<br> <b><p>Open: 9 AM – 7 PM </b></p>
+</section>
+
+
+
+
+<footer>
+
+<p style="font-weight:600; font-size:18px;">HT Trading Company</p>
+
+<p style="margin:10px 0 20px;">
+Reliable hardware store in Shimla offering tiles, sanitary, fittings, wooden flooring and building materials for your dream home.
+</p>
+
+<p style="font-size:14px; opacity:0.8;">
+Follow us for latest designs & new stock updates
+</p>
+<!-- SOCIAL MEDIA -->
+<div class="footer-social">
+
+  <a href="https://www.instagram.com/ht_trading_company_shimla/" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3h10zm-5 3.5A4.5 4.5 0 0 0 7.5 12 4.5 4.5 0 0 0 12 16.5 4.5 4.5 0 0 0 16.5 12 4.5 4.5 0 0 0 12 7.5zm0 2A2.5 2.5 0 0 1 14.5 12 2.5 2.5 0 0 1 12 14.5 2.5 2.5 0 0 1 9.5 12 2.5 2.5 0 0 1 12 9.5zm4.75-3a1.25 1.25 0 0 0-1.25 1.25 1.25 1.25 0 0 0 1.25 1.25A1.25 1.25 0 0 0 18 6.75 1.25 1.25 0 0 0 16.75 5.5z"/>
+    </svg>
+  </a>
+
+  <a href="https://www.facebook.com/profile.php?id=61561429820728" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M13 22v-9h3l1-4h-4V7c0-1.03.29-1.73 1.76-1.73H17V1.4C16.55 1.34 15.13 1.2 13.5 1.2 10.42 1.2 8 3.07 8 6.56V9H5v4h3v9h5z"/>
+    </svg>
+  </a>
+
+</div>
+
+<p style="margin-top:20px;">© 2026 HT Trading Company</p>
+
+</footer>
+
+
+
+
+
+<!-- IMPORTANT FOR POPUP STRUCTURE -->
+<div id="productPopup" class="popup">
+
+  <div class="popup-content">
+
+    <span class="close-btn" onclick="closePopup()">×</span>
+
+    <h2 id="popupTitle">Category Name</h2>
+
+    <div class="popup-images">
+      <img src="images/tile1.jpg">
+      <img src="images/tile2.jpg">
+      <img src="images/tile3.jpg">
+    </div>
+
+  </div>
+
+</div>
+
+<!-- IMAGE FULL VIEW -->
+<div id="imageViewer" class="image-viewer">
+  <button class="close-viewer" onclick="closeImage()">×</button>
+  <img id="viewerImg">
+
+  <!-- Dots -->
+  <div class="image-dots" id="imageDots"></div>
+<button class="nav-arrow left" onclick="showPrev()">❮</button>
+<button class="nav-arrow right" onclick="showNext()">❯</button> 
+</div>
+
+  <!-- call option -->
+<div id="callPopup" class="popup">
+  <div class="popup-content" style="max-width:400px;text-align:center;">
+
+    <span class="close-btn" onclick="closeCallPopup()">×</span>
+
+    <h2 style="margin-bottom:20px;">Choose Number</h2>
+
+    <a href="tel:+919816047057" class="btn" style="display:block;margin:10px 0;">
+      📞 Call Owner
+    </a>
+
+    <a href="tel:+918580450565" class="btn" style="display:block;margin:10px 0;">
+      📞 Call Store
+    </a>
+
+  </div>
+</div>
+
+
+
+
+
+
+<script>
+
+/* =========================
+   SCROLL ANIMATION
+========================= */
+
+function revealOnScroll(){
+  const reveals = document.querySelectorAll('.reveal');
+
+  reveals.forEach((el) => {
+    const windowHeight = window.innerHeight;
+    const elementTop = el.getBoundingClientRect().top;
+
+    if(elementTop < windowHeight - 100){
+      el.classList.add('active');
+    }
+  });
+}
+
+function animationLoop(){
+  revealOnScroll();
+  requestAnimationFrame(animationLoop);
+}
+animationLoop();
+
+
+
+
+/* =========================
+   Call options
+========================= */
+function openCallPopup(){
+  document.getElementById("callPopup").classList.add("active");
+}
+
+function closeCallPopup(){
+  document.getElementById("callPopup").classList.remove("active");
+}
+
+
+
+
+
+/* =========================
+   POPUP SYSTEM
+========================= */
+
+function openPopup(category){
+
+  const popup = document.getElementById("productPopup");
+  const title = document.getElementById("popupTitle");
+  const container = document.querySelector(".popup-images");
+
+  popup.classList.add("active");
+
+
+
+/* CATEGORY CONTENT */
+
+if(category === "Tiles, Adhesives & Sealants"){
+  title.innerText = "Built to Last";
+
+  container.innerHTML = `
+    <img src="tiles/outdoor-all-weather-tiles-shimla.png" alt="Outdoor all weather tiles for balcony terrace flooring Shimla" onclick="openImage(this.src)">
+    <img src="tiles/exterior-weather-resistant-tiles-shimla.png" alt="Exterior tiles for cold weather durable flooring Shimla" onclick="openImage(this.src)">
+    <img src="tiles/stone-finish-wall-floor-tiles-shimla.png" alt="Stone finish tiles for wall and floor natural look Shimla" onclick="openImage(this.src)">
+    <img src="tiles/wood-finish-floor-tiles-shimla.png" alt="Wood finish tiles for living room flooring modern interiors Shimla" onclick="openImage(this.src)">
+    <img src="tiles/ceramic-wall-floor-tiles-shimla.png" alt="Ceramic tiles for kitchen and bathroom wall design Shimla" onclick="openImage(this.src)">
+    <img src="tiles/matte-anti-slip-floor-tiles-shimla.png" alt="Matte finish anti slip tiles for floor safety Shimla" onclick="openImage(this.src)">
+    <img src="tiles/modern-matte-interior-tiles-shimla.png" alt="Modern matte tiles for home interior flooring Shimla" onclick="openImage(this.src)">
+    <img src="tiles/vitrified-durable-floor-tiles-shimla.png" alt="Vitrified tiles for durable high strength flooring Shimla" onclick="openImage(this.src)">
+    <img src="tiles/glossy-vitrified-premium-tiles-shimla.png" alt="Premium vitrified tiles glossy finish flooring Shimla" onclick="openImage(this.src)">
+    <img src="tiles/porcelain-luxury-floor-wall-tiles-shimla.png" alt="Porcelain tiles for luxury interior wall and floor Shimla" onclick="openImage(this.src)">
+    <img src="tiles/tile-adhesive-sealants-material-shimla.png" alt="Tile adhesive and sealants for strong fixing material Shimla" onclick="openImage(this.src)">
+  `;
+}
+
+else if(category === "Sanitary & Bathroom Fitting"){
+  title.innerText = "Beauty Starts Here";
+
+  container.innerHTML = `
+    <img src="sanitary/ceramic-wash-basin-bathroom-shimla.png" alt="Ceramic wash basin for modern bathroom design Shimla" onclick="openImage(this.src)">
+    <img src="sanitary/one-piece-western-toilet-seat-shimla.png" alt="One piece western toilet seat bathroom sanitary Shimla" onclick="openImage(this.src)">
+    <img src="sanitary/single-piece-wash-basin-sink-shimla.png" alt="Single piece wash basin sink for bathroom fitting Shimla" onclick="openImage(this.src)">
+    <img src="sanitary/wall-mounted-toilet-seat-shimla.png" alt="Wall mounted toilet seat modern bathroom sanitary Shimla" onclick="openImage(this.src)">
+    <img src="sanitary/hand-shower-set-bathroom-fitting-shimla.png" alt="Hand shower set with pipe bathroom fittings Shimla" onclick="openImage(this.src)">
+    <img src="sanitary/square-overhead-shower-shimla.png" alt="SWR pipes for waste water drainage system Shimla" onclick="openImage(this.src)">
+    <img src="sanitary/round-overhead-shower-shimla.png" alt="Round overhead shower for bathroom modern fittings Shimla" onclick="openImage(this.src)">
+    <img src="sanitary/luxury-bathroom-shower-system-shimla.png" alt="Luxury bathroom shower system fittings Shimla" onclick="openImage(this.src)">
+    <img src="sanitary/bathroom-accessories-fittings-set-shimla.png" alt="Bathroom fittings and accessories set sanitary hardware Shimla" onclick="openImage(this.src)">
+    <img src="sanitary/complete-bathroom-fitting-set-shimla.png" alt="Complete bathroom fitting set sanitary hardware Shimla" onclick="openImage(this.src)">
+    <img src="sanitary/gi-pipes-plumbing-water-supply-shimla.png" alt="GI pipes for plumbing and water supply construction Shimla" onclick="openImage(this.src)">
+    <img src="sanitary/swr-pipe-fittings-drainage-shimla.png" alt="SWR pipe fittings for drainage system plumbing Shimla" onclick="openImage(this.src)">
+    <img src="sanitary/swr-drainage-pipes-shimla.png" alt="SWR pipes for waste water drainage system Shimla" onclick="openImage(this.src)">
+    <img src="sanitary/plumbing-solvent-pipe-fixing-shimla.jpeg" alt="Plumbing solvent for pipe joint fixing solution Shimla" onclick="openImage(this.src)">
+  `;
+}
+
+else if(category === "Wooden Flooring & WPC"){
+  title.innerText = "Step into Nature";
+
+  container.innerHTML = `
+    <img src="wooden-flooring/laminated-kitchen-boards-shimla.png" alt="Laminated kitchen boards moisture resistant furniture boards Shimla"onclick="openImage(this.src)">
+    <img src="wooden-flooring/wooden-flooring-panels-home-shimla.png" alt="Wooden flooring panels for home interior design Shimla" onclick="openImage(this.src)">
+    <img src="wooden-flooring/action-tesa-laminate-flooring-shimla.png" alt="Action Tesa wooden flooring premium laminate flooring Shimla" onclick="openImage(this.src)">
+    <img src="wooden-flooring/wpc-wall-panels-waterproof-shimla.png" alt="WPC wall panels waterproof interior exterior design Shimla" onclick="openImage(this.src)">
+    <img src="wooden-flooring/decorative-wall-louvers-shimla.jpeg" alt="Decorative wall louvers for interior wall panel design Shimla" onclick="openImage(this.src)">
+    <img src="wooden-flooring/wooden-louvers-wall-paneling-shimla.jpeg" alt="Wooden louvers for wall paneling modern interiors Shimla" onclick="openImage(this.src)">
+    <img src="wooden-flooring/wpc-louvers-waterproof-wall-shimla.jpeg" alt="WPC louvers waterproof wall panel design Shimla" onclick="openImage(this.src)">
+    <img src="wooden-flooring/wpc-wall-cladding-panels-shimla.jpeg" alt="WPC panels for exterior and interior wall cladding Shimla" onclick="openImage(this.src)">
+  `;
+}
+
+else if(category === "Electronic"){
+  title.innerText = "Smart Living Starts Here";
+
+  container.innerHTML = `
+    <img src="electric/electric-geyser-water-heater-shimla.png" alt="Electric geyser for hot water bathroom heating Shimla" onclick="openImage(this.src)">
+    <img src="electric/kitchen-chimneys-modular-shimla.png" alt="Kitchen chimneys for smoke ventilation modular kitchen Shimla" onclick="openImage(this.src)">
+    <img src="electric/stainless-steel-kitchen-chimney-shimla.png" alt="Modern kitchen chimney stainless steel exhaust system Shimla" onclick="openImage(this.src)">
+  `;
+}
+
+else if(category === "Laminated MDF, HDHMR Boards & MICA"){
+  title.innerText = "Built Rigid. Finished Beautiful.";
+
+  container.innerHTML = `
+    <img src="ply/wooden-batten-structure-support-shimla.png" alt="Wooden batten for furniture support structure Shimla" onclick="openImage(this.src)">
+    <img src="ply/pine-wood-boards-furniture-shimla.png" alt="Pine wood boards for furniture making construction material Shimla" onclick="openImage(this.src)">
+    <img src="ply/laminated-boards-furniture-cabinets-shimla.png" alt="Laminated boards for furniture cabinets interior design Shimla" onclick="openImage(this.src)">
+    <img src="ply/plywood-sheets-furniture-interior-shimla.png" alt="Plywood sheets for furniture and interior construction Shimla" onclick="openImage(this.src)">
+    <img src="ply/hdhmr-moisture-resistant-board-shimla.png" alt="HDHMR board moisture resistant high density furniture board Shimla" onclick="openImage(this.src)">
+    <img src="ply/heat-insulator-glass-wool-shimla.png" alt="For Temperature Regulation Inside House Shimla" onclick="openImage(this.src)">
+  `;
+}
+
+else if(category === "Handles & Locks"){
+  title.innerText = "Security Meets Style";
+
+  container.innerHTML = `
+    <img src="locks/door-handles-modern-design-shimla.png" alt="Door handles modern design hardware fittings Shimla" onclick="openImage(this.src)">
+    <img src="locks/door-kundi-mashbar-security-shimla.png" alt="Door kundi and mashbar security hardware fittings Shimla" onclick="openImage(this.src)">
+    <img src="locks/cabinet-door-handles-furniture-shimla.png" alt="Cabinet door handles stylish furniture hardware Shimla" onclick="openImage(this.src)">
+    <img src="furniture-fitting/kitchen-cabinet-basket-storage-shimla.png" alt="Kitchen cabinet basket for storage modular kitchen fittings Shimla" onclick="openImage(this.src)">
+    <img src="furniture-fitting/aluminium-glass-profile-cabinet-shimla.png" alt="Aluminium glass profile for cabinet doors modern furniture fittings Shimla" onclick="openImage(this.src)">
+    <img src="furniture-fitting/hettich-soft-close-hinges-shimla.png" alt="Hettich soft close hinges premium cabinet hardware fittings Shimla" onclick="openImage(this.src)">
+    <img src="furniture-fitting/stainless-steel-cabinet-hinges-shimla.png" alt="Stainless steel cabinet hinges for furniture doors hardware Shimla" onclick="openImage(this.src)">
+    <img src="furniture-fitting/kitchen-plate-basket-storage-shimla.png" alt="Kitchen plate basket stainless steel storage rack cabinet fittings Shimla" onclick="openImage(this.src)">
+  `;
+}
+}
+
+/* CLOSE POPUP */
+function closePopup(){
+  document.getElementById("productPopup").classList.remove("active");
+}
+
+/* CLICK OUTSIDE */
+window.onclick = function(e){
+  const popup = document.getElementById("productPopup");
+  if(e.target === popup){
+    popup.classList.remove("active");
+  }
+}
+
+
+
+
+/* =========================
+   IMAGE VIEWER SYSTEM
+========================= */
+
+let currentImages = [];
+let currentIndex = 0;
+
+function openImage(src){
+
+  const viewer = document.getElementById("imageViewer");
+  const img = document.getElementById("viewerImg");
+
+  const imgs = document.querySelectorAll(".popup-images img");
+  currentImages = Array.from(imgs).map(i => i.src);
+
+  currentIndex = currentImages.indexOf(src);
+
+  img.src = src;
+  viewer.classList.add("active");
+  updateDots();
+}
+
+function closeImage(){
+  document.getElementById("imageViewer").classList.remove("active");
+}
+
+function showNext(){
+  const img = document.getElementById("viewerImg");
+
+  img.style.opacity = "0";
+
+  setTimeout(()=>{
+    currentIndex = (currentIndex + 1) % currentImages.length;
+    img.src = currentImages[currentIndex];
+    img.style.opacity = "1";
+    updateDots();
+  }, 200);
+}
+
+function showPrev(){
+  const img = document.getElementById("viewerImg");
+
+  img.style.opacity = "0";
+
+  setTimeout(()=>{
+    currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+    img.src = currentImages[currentIndex];
+    img.style.opacity = "1";
+    updateDots();
+  }, 200);
+}
+
+
+
+
+/* =========================
+   SAFE EVENT LISTENERS
+========================= */
+
+document.addEventListener("DOMContentLoaded", function(){
+
+  const viewer = document.getElementById("imageViewer");
+  const img = document.getElementById("viewerImg");
+
+  let startX = 0;
+  let mouseDown = false;
+  let zoomLevel = 1;
+
+
+
+  /* TOUCH SWIPE */
+  viewer.addEventListener("touchstart", (e)=>{
+    startX = e.touches[0].clientX;
+  });
+
+  viewer.addEventListener("touchend", (e)=>{
+    let endX = e.changedTouches[0].clientX;
+
+    if(startX - endX > 50) showNext();
+    else if(endX - startX > 50) showPrev();
+  });
+
+
+
+  /* SCROLL ZOOM */
+  img.addEventListener("wheel", function(e){
+    e.preventDefault();
+
+    zoomLevel += (e.deltaY < 0 ? 0.1 : -0.1);
+    zoomLevel = Math.max(1, Math.min(zoomLevel, 3));
+
+    this.style.transform = `scale(${zoomLevel})`;
+  });
+
+});
+
+
+
+
+
+/* =========================
+   DOTS
+========================= */
+
+function updateDots(){
+  const dotsContainer = document.getElementById("imageDots");
+  dotsContainer.innerHTML = "";
+
+  currentImages.forEach((_, i) => {
+    const dot = document.createElement("span");
+    if(i === currentIndex){
+      dot.classList.add("active");
+    }
+    dotsContainer.appendChild(dot);
+  });
+}
+
+</script>
+
+
+</body>
+</html>
+
